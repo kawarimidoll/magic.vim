@@ -7,7 +7,7 @@ Change the very-magic flag in search query.
 ## Usage
 
 ```vim
-cnoremap <expr> <C-x> mi#magic#expr()
+cnoremap <expr> <C-x> magic#expr()
 ```
 
 Works with:

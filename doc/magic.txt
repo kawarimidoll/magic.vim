@@ -41,7 +41,7 @@ magic#expr()				*magic#expr()*
 EXAMPLES						*magic-examples*
 
 >
-	cnoremap <expr> <C-x> mi#magic#expr()
+	cnoremap <expr> <C-x> magic#expr()
 <
 
 ==============================================================================
