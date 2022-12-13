@@ -1,0 +1,48 @@
+*magic.txt* *magic.vim*	Change the very-magic flag in search query
+
+Author: kawarimidoll (https://github.com/kawarimidoll)
+License: MIT License
+Repository: https://github.com/kawarimidoll/magic.vim
+
+CONTENTS					*magic-contents*
+
+Introduction				|magic-introduction|
+Functions				|magic-functions|
+Examples				|magic-examples|
+
+==============================================================================
+INTRODUCTION					*magic-introduction*
+
+Change the very-magic flag in search query.
+
+Works with:
+- search
+	- |/|
+	- |?|
+- commands
+	- |:global|
+	- |:lvimgrep|
+	- |:lvimgrepadd|
+	- |:sort|
+	- |:substitute|
+	- |:vglobal|
+	- |:vimgrep|
+	- |:vimgrepadd|
+
+------------------------------------------------------------------------------
+FUNCTIONS						*magic-functions*
+
+magic#expr()				*magic#expr()*
+	Toggle |/\v| and |/\V| in search query.
+	If not specified both of them, add |/\v|.
+	Designed to be used in |mapmode-c| with |:map-<expr>|.
+
+------------------------------------------------------------------------------
+EXAMPLES						*magic-examples*
+
+>
+	cnoremap <expr> <C-x> mi#magic#expr()
+<
+
+==============================================================================
+vim:tw=78:sw=4:ts=8:ft=help:norl:noet:
