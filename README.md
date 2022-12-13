@@ -2,6 +2,8 @@
 
 Change the very-magic flag in search query.
 
+![demo](https://user-images.githubusercontent.com/8146876/207235817-8efa328e-d319-4a01-9b68-33e2f3f19407.gif)
+
 ## Usage
 
 ```vim
