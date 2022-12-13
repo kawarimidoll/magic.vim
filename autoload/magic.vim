@@ -73,7 +73,7 @@ function! magic#expr() abort
     let matchidx = matchend(query, s:cmdline_pattern)
     if matchidx < 1
       " not listed command
-      return 'not'
+      return ''
     endif
     let before_query = query[:matchidx - 1]
     let [query, pos_diff] = s:update_magic(query[matchidx:])
